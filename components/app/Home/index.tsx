@@ -6,7 +6,7 @@
 const HomePage = () => {
     return (
         <div>
-            this is home page
+            animated portfolio
         </div>
     );
 }
