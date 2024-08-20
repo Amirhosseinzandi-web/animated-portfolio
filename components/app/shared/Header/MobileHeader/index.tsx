@@ -6,7 +6,7 @@ import { Layout } from "antd";
 
 const MobileHeader = () => {
     return (
-        <Layout className="md:hidden">
+        <Layout className="bg-transparent p-0 md:hidden">
             Enter
         </Layout>
     );
