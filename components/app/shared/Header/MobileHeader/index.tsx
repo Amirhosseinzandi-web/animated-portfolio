@@ -98,7 +98,7 @@ const MobileHeader = () => {
                                     className="text-center"
                                     variants={itemVariants}
                                 >
-                                    <Link href={item.path} className="text-white/80 text-3xl">
+                                    <Link href={item.path} onClick={() => setMenuOpen(false)} className="text-white/80 text-3xl">
                                         {item.label}
                                     </Link>
                                 </motion.li>

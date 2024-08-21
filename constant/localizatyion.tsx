@@ -59,5 +59,10 @@ export const pageLevelLocalization = {
                 contactBtn: "Contact Me"
             }
         }
+    },
+    about: {
+        title: "BIOGRAPHY",
+        descriptionOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum quibusdam cupiditate nobis accusamus sed aut aperiam, reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque suscipit! Vel doloremque numquam quam nihil.",
+        descriptionTWo: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
 }

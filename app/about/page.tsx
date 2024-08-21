@@ -1,3 +1,4 @@
+import AboutComponent from "@/components/app/About";
 
 
 
@@ -5,9 +6,7 @@
 
 const AboutPage = () => {
     return (
-        <div>
-            this is about page
-        </div>
+        <AboutComponent />
     );
 }
 
