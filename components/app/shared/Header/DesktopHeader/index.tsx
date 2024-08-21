@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header } = Layout;
 
 const DesktopHeader = () => {
     const { header } = localization

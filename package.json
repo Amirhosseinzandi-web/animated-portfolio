@@ -11,10 +11,12 @@
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
     "antd": "^5.20.0",
+    "blurhash": "^2.0.5",
     "framer-motion": "^11.3.28",
     "next": "14.2.5",
     "plaiceholder": "^3.0.0",
     "react": "^18",
+    "react-blurhash": "^0.3.0",
     "react-dom": "^18",
     "sharp": "^0.33.5"
   },

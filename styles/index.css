@@ -65,3 +65,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.chronicle-display {
+    font-family: 'Chronicle Display', sans-serif;
+}
+
+.gilory {
+    font-family: 'Gilroy', sans-serif;
+}

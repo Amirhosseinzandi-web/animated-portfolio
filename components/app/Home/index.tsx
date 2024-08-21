@@ -1,13 +1,48 @@
+"use client"
+import { pageLevelLocalization } from "@/constant/localizatyion";
+import { Col, Layout, Row, Typography } from "antd";
+import Image from "next/image";
+import Logo from "../../../public/pictures/hero.webp";
 
 
 
-
+const { Content } = Layout;
+const { Text, Title } = Typography
 
 const HomePage = () => {
+
+    const { home } = pageLevelLocalization
     return (
-        <div className="my-48">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti qui, earum accusamus cumque expedita ipsam eius reprehenderit laborum illo molestias repellendus voluptas veniam sapiente voluptate consectetur, inventore aliquam harum, quibusdam officiis. Officiis id beatae tempore voluptatibus deserunt, fuga illo. Cum facilis consequuntur id cupiditate impedit, iste dolorum adipisci quis alias temporibus est ad aspernatur enim ipsum sunt repellendus, nisi quia nihil. Itaque aspernatur incidunt repudiandae ipsa cum enim, corporis accusamus dolor ducimus. Temporibus hic minus labore optio quia. Debitis architecto maiores exercitationem et, repudiandae officia delectus ipsum, totam accusantium nostrum voluptatum, similique asperiores deserunt. Ipsum aperiam perferendis provident aut odit unde aspernatur a quam atque sapiente animi earum, iure ullam alias facere nostrum consectetur praesentium dolore repellendus excepturi laudantium! Odit ducimus cupiditate consectetur ea voluptate facere rem, earum non in dignissimos temporibus tenetur praesentium maxime ipsa consequuntur doloremque alias delectus ipsum accusantium ullam vero, cumque reiciendis? Voluptate enim qui ratione numquam cum ipsum. Quidem nemo numquam ducimus vitae reiciendis reprehenderit voluptas illo maiores delectus molestias necessitatibus atque quaerat eum, totam libero cumque! Non ab ipsum deserunt debitis fugiat vel eligendi soluta consequuntur tempora enim, laborum facere numquam voluptatum iusto neque illo voluptatem magni deleniti, tenetur reiciendis repellat! Veritatis debitis aliquid nihil, eaque eligendi porro excepturi beatae veniam. Tenetur similique laudantium modi, eum quis labore quam maxime. Itaque, cumque sed facere aliquam officiis laudantium sapiente tempora beatae vitae culpa. Neque expedita in ut officiis suscipit inventore labore illum at necessitatibus atque cupiditate cum pariatur, blanditiis fuga vel ipsam quos reiciendis, dignissimos molestias dolor perspiciatis repellendus corporis? Earum voluptate aliquid accusamus dolorem quidem itaque reiciendis architecto esse doloremque distinctio quo perspiciatis quis voluptatum facere, expedita nihil. Tempora ratione sequi dolorum illum laboriosam repudiandae ab corporis mollitia, maxime eius at necessitatibus, error aperiam veniam. Ducimus doloribus aspernatur, repellat cum exercitationem labore? Ipsa recusandae neque autem repellat non quibusdam nam iste excepturi animi voluptate corrupti a veniam, dolorem maxime, itaque, laborum quo adipisci ratione accusamus. Ipsam iste eum nam facere possimus, provident, similique aliquam, suscipit unde id iure nihil temporibus quaerat libero. Harum laboriosam eius ipsam recusandae quisquam! Adipisci accusamus odio nobis voluptate eum laboriosam eligendi? Nemo rem dolorum qui suscipit minus, vel deserunt recusandae iste cumque cupiditate sapiente exercitationem tempore ipsum sunt ipsa, natus, omnis aut hic vero quaerat consequatur reprehenderit harum officia consequuntur? Molestias iste, omnis quasi cumque ipsum at inventore dolores laborum! Eius totam optio saepe. Vitae, cum similique! Vitae voluptatum mollitia quos, aliquam, consequuntur cum nihil et delectus soluta vel sint sunt explicabo omnis magni culpa velit iure illo praesentium, minima temporibus provident rerum a sit! Dicta voluptatibus dolor sit aliquid odio voluptate reiciendis id quisquam odit neque sed excepturi reprehenderit possimus non magni mollitia, dolore soluta quae, nam sequi porro! Itaque, maxime rem repellat blanditiis fuga numquam accusamus assumenda odit dicta, deserunt dolorem debitis ad neque sequi repudiandae ducimus hic ab quibusdam, sapiente adipisci. Alias, voluptatum commodi? Animi, ab. Libero fugiat consequatur sed quibusdam dolorem rerum? Ab eligendi fugit consequuntur ea unde temporibus distinctio deleniti excepturi totam! Nesciunt soluta velit ab optio sequi aliquid dignissimos vel voluptatum repellat cum nam quam voluptas recusandae debitis praesentium nobis, consequuntur nostrum eos nulla sed obcaecati. Earum provident soluta doloremque qui reiciendis, fuga, rerum aperiam perferendis deleniti accusamus, sit veritatis asperiores. Impedit, autem veritatis, totam ad cupiditate dolore in dolores fugiat exercitationem inventore consequatur, nihil omnis. Minus fuga, corporis aliquid iusto consectetur autem excepturi enim hic sequi sed, id quam itaque qui unde deleniti similique ipsam accusantium vitae laboriosam! Itaque debitis vitae delectus obcaecati dolore assumenda laborum laudantium, repellat voluptas asperiores soluta. Ipsum consectetur magni molestiae quasi velit! Modi delectus commodi odit officia itaque recusandae dolorem eaque quidem quam labore non tempore quisquam natus velit nam, maxime at esse alias doloribus ex saepe ullam! Hic, quisquam. Voluptatum, sint? Nemo, exercitationem reprehenderit deserunt facilis hic minus commodi sunt atque vel corporis omnis suscipit aliquam ipsum voluptates impedit adipisci. Modi corrupti quo laudantium labore minima magnam ratione inventore, et enim eius. A et pariatur nobis eius perspiciatis quis nisi corrupti quam, tenetur dolor sequi ipsa suscipit exercitationem, ullam accusamus excepturi quia accusantium perferendis fuga quas atque fugiat. Unde qui porro, mollitia sunt asperiores exercitationem praesentium repellendus veniam maxime quidem recusandae dolorum nulla aliquam iste labore ad vitae eius incidunt! Sunt et iusto nihil! Provident ad excepturi voluptate laudantium voluptatum possimus dolorum magni. Enim esse tempora consequuntur consectetur beatae accusantium ipsum fugiat maxime eos illo reiciendis et nostrum vitae optio, ex, nobis eligendi? Dignissimos nihil ad esse nesciunt vitae nostrum fugit? Ad veritatis officiis, enim voluptates facere quae voluptatem possimus, qui aperiam et illum non nam vitae voluptatum corporis illo iste reprehenderit nostrum nobis distinctio, voluptate beatae optio. Facilis voluptate, veniam aspernatur, laboriosam rerum nulla sunt quaerat adipisci blanditiis temporibus cum inventore. Enim reprehenderit, ad dolor modi ab eius. In veritatis fugiat vitae. Explicabo, doloribus! Delectus assumenda, iste velit illo, dolor sint eos cumque corporis possimus deserunt libero illum expedita soluta cum laudantium harum enim praesentium reiciendis itaque ad molestiae saepe aperiam pariatur? Voluptatum necessitatibus mollitia quo dolorem velit molestias voluptates rem, iusto corporis maxime vero et sunt excepturi impedit nobis reiciendis hic nulla blanditiis inventore nam? Distinctio, eaque! Voluptate consectetur ducimus illum minima nulla! Error consequuntur, unde alias recusandae odio non ex doloremque magni ab quaerat qui quae sunt molestiae porro libero soluta, odit cum accusantium similique laboriosam magnam. Modi quos aut quo labore quam. Esse, quibusdam eum? Quod fuga, est nesciunt exercitationem perspiciatis accusantium iusto soluta tempora saepe! Aspernatur hic itaque obcaecati quae officiis minus repellendus! Est, tempore, ab illum dolor facere quo impedit pariatur temporibus minus cupiditate doloribus quod repellendus, mollitia eaque inventore. Molestiae rem temporibus animi veritatis tempora explicabo perferendis assumenda, hic quo labore facilis non consectetur asperiores amet accusantium deleniti architecto porro recusandae expedita? Ea ipsa laudantium inventore iure similique voluptates, ut incidunt aliquam quidem ab eaque sint veniam eligendi voluptas enim consequuntur sapiente dolore repudiandae vero. Distinctio cum aspernatur delectus odit eaque facilis harum reprehenderit tempore voluptate, et reiciendis autem? Voluptas incidunt itaque at laudantium doloribus quibusdam nemo explicabo modi.
-        </div>
+        <Layout className="bg-transparent p-0">
+            <Content className="px-3">
+
+                <Row className="mt-7 gap-9 lg:h-[calc(100dvh-98px)] lg:items-center">
+
+                    <Col xs={24} lg={12} className="flex justify-center select-none">
+                        <div className="relative w-[400px] h-[400px] lg:w-full lg:h-auto lg:pb-[85%]">
+                            <Image
+                                src={Logo}
+                                alt="Picture of the author"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+
+                    </Col>
+
+                    <Col xs={24} lg={11} className="flex flex-col gap-8 lg:justify-center">
+                        <Title className="gilory font-bold !m-0 !leading-10 md:!text-6xl">{home.hero.contents.contectOne}</Title>
+                        <Text className="leading-6 text-base md:!text-xl">{home.hero.contents.contectTwo}</Text>
+                        <div className="flex gap-4">
+                            <button className="p-4 bg-black text-white rounded-md md:!text-base">{home.hero.contents.viewMyWorkBtn}</button>
+                            <button className="p-4 border border-black rounded-md md:!text-base">{home.hero.contents.contactBtn}</button>
+                        </div>
+                    </Col>
+
+                </Row>
+
+            </Content>
+        </Layout>
     );
 }
 
