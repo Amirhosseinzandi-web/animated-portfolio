@@ -12,7 +12,7 @@ const HomePage = () => {
 
     const { home } = pageLevelLocalization
     return (
-        <Layout className="bg-transparent h-[calc(100dvh-70px)] lg:overflow-y-clip p-0 lg:justify-center">
+        <Layout className="bg-transparent h-[calc(100dvh-70px)] md:overflow-y-clip p-0 md:justify-center">
 
             <Row className="p-3 mt-7 gap-9">
 
