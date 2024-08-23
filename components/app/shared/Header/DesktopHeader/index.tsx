@@ -16,7 +16,7 @@ const DesktopHeader = () => {
     return (
         <>
             <Layout className="bg-transparent p-0 hidden md:block">
-                <Header className="text-black p-0 bg-transparent h-auto flex items-center leading-none mt-[30px] justify-around">
+                <Header className="text-black bg-transparent h-auto flex items-center leading-none mt-[30px] max-w-[1920px] mx-auto md:px-12 xl:px-40 2xl:px-48 justify-between">
 
                     <nav>
                         <ul className="flex gap-5">

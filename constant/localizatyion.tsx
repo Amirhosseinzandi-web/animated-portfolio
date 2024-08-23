@@ -63,6 +63,14 @@ export const pageLevelLocalization = {
     about: {
         title: "BIOGRAPHY",
         descriptionOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum quibusdam cupiditate nobis accusamus sed aut aperiam, reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque suscipit! Vel doloremque numquam quam nihil.",
-        descriptionTWo: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        descritionTwo: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        skills: {
+            title: "SKILLS",
+            skillsName: ["JavaScript", "TypeScript", "React.js", "Next.js", "Django", "SCSS",
+                "Tailwind CSS", "MongoDB", "PostgreSQL", "Node.js",
+                "Nest.js", "Express.js", "Spring Boot", "GraphQL", "Apollo",
+                "Redux", "Framer Motion", "Three.js", "WebGL", "Webpack",
+                "Vite", "Docker", "AWS", "Firebase", "Git", "Figma"]
+        }
     }
 }

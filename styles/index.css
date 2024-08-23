@@ -65,6 +65,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    overflow-y: hidden;
+}
 
 .chronicle-display {
     font-family: 'Chronicle Display', sans-serif;
@@ -72,4 +75,7 @@
 
 .gilory {
     font-family: 'Gilroy', sans-serif;
+}
+.custom{
+    border: 1px solid blue;
 }

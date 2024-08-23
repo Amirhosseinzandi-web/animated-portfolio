@@ -18,12 +18,16 @@ const HomePage = () => {
         setDomLoaded(true)
     }, [])
 
+    useEffect(() => {
+        domLoaded && (document.body.style.overflowY = "auto")
+    }, [domLoaded])
+
 
     const { home } = pageLevelLocalization
     return (
         <>
             {!domLoaded && <PreLoader />}
-            <Layout className="bg-transparent lg:h-[calc(100dvh-70px)] md:overflow-y-clip p-3 md:justify-center">
+            <Layout className="bg-transparent md:h-[calc(100dvh-70px)] md:overflow-y-clip p-3 md:justify-center">
                 <div className="mt-7">
                     <Row className="gap-9">
 
