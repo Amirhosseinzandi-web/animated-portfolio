@@ -16,6 +16,8 @@ const MobileHeader = () => {
     useEffect(() => {
         if (menuOpen) {
             document.documentElement.style.overflowY = "hidden"
+        } else {
+            document.documentElement.style.overflowY = "auto"
         }
     }, [menuOpen])
 
@@ -55,9 +57,9 @@ const MobileHeader = () => {
                     <AnimatePresence mode="wait">
                         {menuOpen ? (
                             <motion.div
-                                key="menu"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
+                                key="menu-open"
+                                // initial={{ opacity: 0 }}
+                                animate={{ opacity: [0, 1] }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.3 }}
                             >
@@ -65,7 +67,7 @@ const MobileHeader = () => {
                             </motion.div>
                         ) : (
                             <motion.div
-                                key="close"
+                                key="menu-close"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
