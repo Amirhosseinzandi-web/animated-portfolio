@@ -45,7 +45,7 @@ const HomePage = () => {
                         </Col>
 
                         <Col xs={24} lg={11} className="flex flex-col gap-8 lg:justify-center">
-                            <div className="min-h-[180px] md:min-h-[180px]">
+                            <div className="min-h-[180px] md:min-h-[314px] 2xl:min-h-[180px]">
                                 <Title
                                     level={1}
                                     className="gilory !font-bold !text-4xl !m-0 !leading-10 md:!text-6xl"
