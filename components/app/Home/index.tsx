@@ -5,6 +5,7 @@ import Image from "next/image";
 import Logo from "../../../public/pictures/hero.webp";
 import { useEffect, useState } from "react";
 import PreLoader from "../PreLoader";
+import { ReactTyped } from "react-typed";
 
 
 
@@ -44,7 +45,23 @@ const HomePage = () => {
                         </Col>
 
                         <Col xs={24} lg={11} className="flex flex-col gap-8 lg:justify-center">
-                            <Title level={1} className="gilory !font-bold !text-4xl !m-0 !leading-10 md:!text-6xl">{home.hero.contents.contectOne}</Title>
+                            {/* <Title level={1} className="gilory !font-bold !text-4xl !m-0 
+                            !leading-10 md:!text-6xl">{home.hero.contents.contectOne}</Title> */}
+                            <div className="min-h-[180px] md:min-h-[180px]">
+                                <Title
+                                    level={1}
+                                    className="gilory !font-bold !text-4xl !m-0 !leading-10 md:!text-6xl"
+                                >
+                                    <ReactTyped
+                                       strings={home.hero.contents.contectOne.map(content => content)}
+                                        typeSpeed={40}
+                                        backDelay={2000}
+                                        loop
+
+                                    />
+                                </Title>
+                            </div>
+
                             <Text className="leading-6 text-base md:!text-xl">{home.hero.contents.contectTwo}</Text>
                             <div className="flex gap-4">
                                 <button className="p-4 bg-black text-white rounded-md md:!text-base">{home.hero.contents.viewMyWorkBtn}</button>

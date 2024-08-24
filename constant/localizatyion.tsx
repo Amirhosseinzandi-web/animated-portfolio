@@ -53,7 +53,16 @@ export const pageLevelLocalization = {
     home: {
         hero: {
             contents: {
-                contectOne: "Crafting Digital Experiences, Designing Tomorrow.",
+                contectOne: [
+                    "Crafting Digital Experiences, Designing Tomorrow.",
+                    "Innovating User Interfaces, Shaping the Future.",
+                    "Building Digital Dreams, Transforming Reality.",
+                    "Creating Seamless Interactions, Advancing Technology.",
+                    "Designing for Tomorrow, Coding the Future.",
+                    "Merging Creativity and Technology, Pioneering Progress.",
+                    "Architecting Digital Solutions, Empowering Users.",
+                    "Visualizing Possibilities, Engineering Innovations."
+                ],
                 contectTwo: "Welcome to my digital canvas, where innovation and creativity converge. With a keen eye for aesthetics and a mastery of code, my portfolio showcases a diverse collection of projects that reflect my commitment to excellence.",
                 viewMyWorkBtn: "View My Work",
                 contactBtn: "Contact Me"
