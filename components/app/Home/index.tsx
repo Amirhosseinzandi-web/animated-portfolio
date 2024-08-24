@@ -55,7 +55,6 @@ const HomePage = () => {
                                         typeSpeed={40}
                                         backDelay={2000}
                                         loop
-
                                     />
                                 </Title>
                             </div>
