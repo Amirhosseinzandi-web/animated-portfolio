@@ -80,6 +80,26 @@ export const pageLevelLocalization = {
                 "Nest.js", "Express.js", "Spring Boot", "GraphQL", "Apollo",
                 "Redux", "Framer Motion", "Three.js", "WebGL", "Webpack",
                 "Vite", "Docker", "AWS", "Firebase", "Git", "Figma"]
+        },
+        experience: {
+            title: "EXPERIENCE",
+            one: {
+                title: "Senior JavaScript Engineer",
+                description: " led web development, offering expertise in JavaScript frameworks.",
+                year: "2024 - Present",
+                company: "Apple"
+            },
+            two: {
+                title: "Senior React Developer",
+                description: "I spearheaded React-based application development, leveraging advanced skills.",
+                year: "2019 - 2024",
+                company: "Microsoft"
+            },
+            three: {
+                title: "Freelancer",
+                description: "I provided web solutions, applying a range of technologies to address client requirements",
+                year: "2010 - 2019" ,
+            }
         }
     }
 }
