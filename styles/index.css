@@ -67,6 +67,7 @@
 
 body{
     overflow-y: hidden;
+    cursor: none;
 }
 
 .chronicle-display {
