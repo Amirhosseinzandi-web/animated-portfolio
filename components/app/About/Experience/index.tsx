@@ -2,6 +2,7 @@
 
 import { pageLevelLocalization } from "@/constant/localizatyion";
 import { Flex, Typography } from "antd";
+import { motion } from "framer-motion";
 
 
 
@@ -16,9 +17,17 @@ const ExperienceComponent = () => {
     return (
         <Flex vertical gap={48}>
 
-            <Title level={1} className="gilory !font-bold !text-2xl !m-0 !leading-10 md:!text-6xl">{about.experience.title}</Title>
+            <motion.div
+                initial={{ x: "-100%" }}
+                whileInView={{ x: 0, transition: { delay: 0.2 } }}
+            >
+                <Title level={1} className="gilory !font-bold !text-2xl !m-0 !leading-10">{about.experience.title}</Title>
+            </motion.div>
 
-            <div>
+            <motion.div
+                initial={{ x: "-100%" }}
+                whileInView={{ x: 0 }}
+            >
                 <Flex>
                     <div className="flex flex-col gap-3 flex-[2]">
                         <Text className="p-3 bg-white rounded-md font-semibold text-base">{about.experience.one.title}</Text>
@@ -65,7 +74,7 @@ const ExperienceComponent = () => {
                     <div className="flex-[2]"></div>
                 </Flex>
 
-            </div>
+            </motion.div>
 
         </Flex>
     );

@@ -26,7 +26,7 @@ const BiographyComponent = () => {
                 />
             </figure>
 
-            <Title level={1} className="gilory !font-bold !text-2xl !m-0 !leading-10 md:!text-6xl">{about.title}</Title>
+            <Title level={1} className="gilory !font-bold !text-2xl !m-0 !leading-10">{about.title}</Title>
             <Text className="text-lg">{about.descriptionOne}</Text>
             <Text className="text-base">{about.descritionTwo}</Text>
             <div className="relative h-[244px] flex">

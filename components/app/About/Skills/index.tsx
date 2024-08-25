@@ -15,14 +15,26 @@ const SkillsComponent = () => {
 
     return (
         <Flex vertical gap={48}>
-            <Title level={1} className="gilory !font-bold !text-2xl !m-0 !leading-10 md:!text-6xl">{about.skills.title}</Title>
-            <Flex gap={16} wrap>
-                {
-                    about.skills.skillsName.map((skill, index) => (
-                        <Text key={index} className="text-sm p-2 bg-black text-white text-nowrap rounded-sm">{skill}</Text>
-                    ))
-                }
-            </Flex>
+            <motion.div
+                initial={{ x: "-100%" }}
+                whileInView={{ x: 0, transition: { delay: 0.2 } }}
+            >
+                <Title level={1} className="gilory !font-bold !text-2xl !m-0 !leading-10 ">{about.skills.title}</Title>
+            </motion.div>
+
+            <motion.div
+                initial={{ x: "-100%" }}
+                whileInView={{ x: 0 }}
+            >
+                <Flex gap={16} wrap>
+                    {
+                        about.skills.skillsName.map((skill, index) => (
+                            <Text key={index} className="text-sm p-2 bg-black text-white text-nowrap rounded-sm">{skill}</Text>
+                        ))
+                    }
+                </Flex>
+            </motion.div>
+
             <div className="flex items-end">
                 <motion.svg
                     viewBox="0 0 24 24"
