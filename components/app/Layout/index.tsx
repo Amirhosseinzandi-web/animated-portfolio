@@ -22,9 +22,9 @@ export default function PublicLayout({ children }: { children: ReactNode }) {
                     <Layout className="p-0 bg-transparent overflow-x-hidden">
                         <HeaderContainer />
                         <AnimatedCursorComponent />
-                        {/* <PageTransitionComponent> */}
+                        <PageTransitionComponent>
                             {children}
-                        {/* </PageTransitionComponent> */}
+                        </PageTransitionComponent>
                     </Layout>
                 </Pwa>
             </body>
