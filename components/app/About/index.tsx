@@ -6,7 +6,7 @@ import BiographyComponent from "./Biography";
 import ExperienceComponent from "./Experience";
 import SkillsComponent from "./Skills";
 import BrainSvgComponent from "./BrainSvg";
-
+import { motion } from "framer-motion"
 
 
 const AboutComponent = () => {
@@ -26,33 +26,39 @@ const AboutComponent = () => {
         <>
 
             {/* {!domLoaded && <PreLoader />} */}
-            <Layout className="bg-transparent pb-48 max-w-[1920px] px-3 mx-auto md:px-12 xl:px-40 2xl:px-48">
-                <Row className="flex-col lg:flex-row gap-44">
+            <motion.div
+                initial={{ y: "-100%" }}
+                animate={{ y: 0 }}
+                transition={{ delay: 0.8, ease: "easeOut" }}
+            >
+                <Layout className="bg-transparent pb-48 max-w-[1920px] px-3 mx-auto md:px-12 xl:px-40 2xl:px-48">
+                    <Row className="flex-col lg:flex-row gap-44">
 
-                    <Col xs={24} lg={9} className="mt-[60px] sm:mt-[64px] md:mt-[78px] xl:mt-[110px] 2xl:mt-[222px]">
-                        <Flex vertical gap={48}>
+                        <Col xs={24} lg={9} className="mt-[60px] sm:mt-[64px] md:mt-[78px] xl:mt-[110px] 2xl:mt-[222px]">
+                            <Flex vertical gap={48}>
 
-                            {/* Biography  */}
+                                {/* Biography  */}
 
-                            <BiographyComponent />
+                                <BiographyComponent />
 
-                            {/* Skills */}
+                                {/* Skills */}
 
-                            <SkillsComponent />
+                                <SkillsComponent />
 
-                            {/* Experience */}
+                                {/* Experience */}
 
-                            <ExperienceComponent />
+                                <ExperienceComponent />
 
-                        </Flex>
-                    </Col>
+                            </Flex>
+                        </Col>
 
-                    <Col xs={24} lg={10} className="hidden lg:block">
-                        <BrainSvgComponent />
-                    </Col>
+                        <Col xs={24} lg={10} className="hidden lg:block">
+                            <BrainSvgComponent />
+                        </Col>
 
-                </Row>
-            </Layout>
+                    </Row>
+                </Layout>
+            </motion.div>
         </>
     );
 }
