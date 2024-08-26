@@ -5,6 +5,7 @@ import Pwa from "./Pwa";
 import HeaderContainer from "../shared/Header";
 import { Layout } from "antd";
 import AnimatedCursorComponent from "@/utilities/AnimatedCursor";
+import PageTransitionComponent from "@/utilities/PageTransition";
 
 
 export const metadata: Metadata = {
@@ -21,7 +22,9 @@ export default function PublicLayout({ children }: { children: ReactNode }) {
                     <Layout className="p-0 bg-transparent overflow-x-hidden">
                         <HeaderContainer />
                         <AnimatedCursorComponent />
-                        {children}
+                        {/* <PageTransitionComponent> */}
+                            {children}
+                        {/* </PageTransitionComponent> */}
                     </Layout>
                 </Pwa>
             </body>

@@ -25,7 +25,7 @@ const AboutComponent = () => {
     return (
         <>
 
-            {!domLoaded && <PreLoader />}
+            {/* {!domLoaded && <PreLoader />} */}
             <Layout className="bg-transparent pb-48 max-w-[1920px] px-3 mx-auto md:px-12 xl:px-40 2xl:px-48">
                 <Row className="flex-col lg:flex-row gap-44">
 

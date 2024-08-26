@@ -27,7 +27,7 @@ const HomePage = () => {
     const { home } = pageLevelLocalization
     return (
         <>
-            {!domLoaded && <PreLoader />}
+            {/* {!domLoaded && <PreLoader />} */}
             <Layout className="bg-transparent md:h-[calc(100dvh-70px)] md:overflow-y-clip p-3 md:justify-center">
                 <div className="mt-7">
                     <Row className="gap-9">
