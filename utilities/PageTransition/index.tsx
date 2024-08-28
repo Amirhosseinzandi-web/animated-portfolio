@@ -13,6 +13,19 @@ const PageTransitionComponent = ({ children }: { children: React.ReactNode }) =>
     const { Text } = Typography
 
 
+    const animationVariants = {
+        initial: { opacity: 0 },
+        animate: {
+          opacity: [0, 1, 0],
+          transition: {
+            duration: 0.7,
+            times: [0, 0.71428, 1],
+            ease: "easeInOut"
+          }
+        }
+      };
+
+
     return (
         <AnimatePresence mode="wait">
 
@@ -30,9 +43,9 @@ const PageTransitionComponent = ({ children }: { children: React.ReactNode }) =>
                     className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[60]"
                     initial={{ opacity: 1 }}
                     animate={{ opacity: 0 }}
-                    transition={{ duration: 0.4, delay: 0.5, ease: "easeOut" }}
+                    transition={{ duration: 0.4, delay: 0.5, ease: "easeInOut" }}
                 >
-                    <Text className="text-white text-8xl">{pathName.charAt(1).toUpperCase() + pathName.substring(2).toLowerCase()}</Text>
+                    <Text className="text-white text-4xl lg:text-8xl">{pathName.charAt(1).toUpperCase() + pathName.substring(2).toLowerCase()}</Text>
                 </motion.div>
 
 

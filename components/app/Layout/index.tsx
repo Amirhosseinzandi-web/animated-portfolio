@@ -1,11 +1,15 @@
+"use client"
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 import "../../../styles/index.css";
 import Pwa from "./Pwa";
 import HeaderContainer from "../shared/Header";
 import { Layout } from "antd";
-import AnimatedCursorComponent from "@/utilities/AnimatedCursor";
 import PageTransitionComponent from "@/utilities/PageTransition";
+import dynamic from "next/dynamic";
+
+
+const AnimatedCursorComponent = dynamic(() => import('@/utilities/AnimatedCursor/index'), { ssr: false })
 
 
 export const metadata: Metadata = {
