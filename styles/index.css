@@ -67,7 +67,7 @@
 
 body {
     overflow-y: hidden;
-    cursor: none;
+    /* cursor: none; */
 }
 
 .chronicle-display {
@@ -80,4 +80,28 @@ body {
 
 .custom {
     border: 1px solid blue;
+}
+
+.gradient-bg-1 {
+    background: linear-gradient(to right, #d8b4fe, #fca5a5);
+}
+
+.gradient-bg-2 {
+    background: linear-gradient(to right, #fca5a5, #93c5fd);
+}
+
+.gradient-bg-3 {
+    background: linear-gradient(to right, #93c5fd, #86efac);
+}
+
+.gradient-bg-4 {
+    background: linear-gradient(to right, #86efac, #fde68a);
+}
+
+.gradient-bg-5 {
+    background: linear-gradient(to right, #fde68a, #f472b6);
+}
+
+.gradient-bg-6 {
+    background: linear-gradient(to right, #f472b6, #60a5fa);
 }

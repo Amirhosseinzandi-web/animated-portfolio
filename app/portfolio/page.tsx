@@ -1,11 +1,11 @@
+import PortfolioComponent from "@/components/app/Portfolio";
+
 
 
 
 const PortfolioPage = () => {
     return (
-        <div>
-            portfolio page
-        </div>
+        <PortfolioComponent />
     );
 }
 

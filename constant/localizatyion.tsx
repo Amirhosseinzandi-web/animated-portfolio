@@ -1,4 +1,10 @@
 import { FacebookFilled, GithubFilled, InstagramFilled, LinkedinFilled } from "@ant-design/icons"
+import digikalaLogo from "@/public/pictures/digikala.png"
+import DashboardLogo from "@/public/pictures/dashboard.png"
+import irancellLogo from "@/public/pictures/irancell.png"
+import virtualLogo from "@/public/pictures/virtual.jpg"
+import cvioLogo from "@/public/pictures/cvio.png"
+
 
 
 
@@ -98,8 +104,53 @@ export const pageLevelLocalization = {
             three: {
                 title: "Freelancer",
                 description: "I provided web solutions, applying a range of technologies to address client requirements",
-                year: "2010 - 2019" ,
+                year: "2010 - 2019",
             }
         }
+    },
+    portfolio: {
+        myWorks: "My Works",
+        workSample: [
+            {
+                title: "Digikala Project",
+                desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, dolore nulla? Harum voluptate assumenda accusamus. Neque ipsum adipisci repellendus quas cumque. Deserunt est totam et eveniet earum delectus provident alias?",
+                src: digikalaLogo,
+                alt: "digikala",
+                href: "https://professional-digikala.vercel.app/",
+                bgColor: "gradient-bg-1"
+            },
+            {
+                title: "Dashboard Project",
+                desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, dolore nulla? Harum voluptate assumenda accusamus. Neque ipsum adipisci repellendus quas cumque. Deserunt est totam et eveniet earum delectus provident alias?",
+                src: DashboardLogo,
+                alt: "dashboard",
+                href: "https://dashboard-iota-orcin.vercel.app/dashboard",
+                bgColor: "gradient-bg-2"
+            },
+            {
+                title: "Irancell Project",
+                desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, dolore nulla? Harum voluptate assumenda accusamus. Neque ipsum adipisci repellendus quas cumque. Deserunt est totam et eveniet earum delectus provident alias?",
+                src: irancellLogo,
+                alt: "irancell",
+                href: "https://irancell.netlify.app/",
+                bgColor: "gradient-bg-3"
+            },
+            {
+                title: "Virtual Project",
+                desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, dolore nulla? Harum voluptate assumenda accusamus. Neque ipsum adipisci repellendus quas cumque. Deserunt est totam et eveniet earum delectus provident alias?",
+                src: virtualLogo,
+                alt: "virtual",
+                href: "https://virtual-reality-beige.vercel.app/",
+                bgColor: "gradient-bg-4"
+            },
+            {
+                title: "Cvio Project",
+                desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, dolore nulla? Harum voluptate assumenda accusamus. Neque ipsum adipisci repellendus quas cumque. Deserunt est totam et eveniet earum delectus provident alias?",
+                src: cvioLogo,
+                alt: "cvio",
+                href: "https://amirhosseinzandi-web.github.io/cvio-website/",
+                bgColor: "gradient-bg-5"
+            }
+        ]
     }
 }

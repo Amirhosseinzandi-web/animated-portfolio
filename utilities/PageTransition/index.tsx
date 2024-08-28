@@ -45,7 +45,7 @@ const PageTransitionComponent = ({ children }: { children: React.ReactNode }) =>
                     animate={{ opacity: 0 }}
                     transition={{ duration: 0.4, delay: 0.5, ease: "easeInOut" }}
                 >
-                    <Text className="text-white text-4xl lg:text-8xl">{pathName.charAt(1).toUpperCase() + pathName.substring(2).toLowerCase()}</Text>
+                    <Text className="text-white text-5xl lg:text-8xl">{pathName.charAt(1).toUpperCase() + pathName.substring(2).toLowerCase()}</Text>
                 </motion.div>
 
 

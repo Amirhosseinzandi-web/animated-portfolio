@@ -25,7 +25,7 @@ export default function PublicLayout({ children }: { children: ReactNode }) {
                     <div className="w-screen h-[100dvh] bg-gradient-to-b from-blue-100 to-red-100 back fixed z-[-1] top-0"></div>
                     <Layout className="p-0 bg-transparent overflow-x-hidden">
                         <HeaderContainer />
-                        <AnimatedCursorComponent />
+                        {/* <AnimatedCursorComponent /> */}
                         <PageTransitionComponent>
                             {children}
                         </PageTransitionComponent>
