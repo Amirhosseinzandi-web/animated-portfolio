@@ -30,8 +30,8 @@ const HomePage = () => {
         <>
             {/* {!domLoaded && <PreLoader />} */}
             <motion.div
-                initial={{ y: "-100%" }}
-                animate={{ y: 0 }}
+                initial={{ y: "-100%" , opacity: 0}}
+                animate={{ y: 0 , opacity: 1}}
                 transition={{delay: 0.8, ease: "easeOut" }}
             >
                 <Layout className="bg-transparent md:h-[calc(100dvh-70px)] md:overflow-y-clip p-3 md:justify-center">

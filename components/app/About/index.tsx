@@ -27,8 +27,8 @@ const AboutComponent = () => {
 
             {/* {!domLoaded && <PreLoader />} */}
             <motion.div
-                initial={{ y: "-100%" }}
-                animate={{ y: 0 }}
+                initial={{ y: "-200vh" , opacity: 0}}
+                animate={{ y: 0 , opacity: 1}}
                 transition={{ delay: 0.8, ease: "easeOut" }}
             >
                 <Layout className="bg-transparent pb-48 max-w-[1920px] px-3 mx-auto md:px-12 xl:px-40 2xl:px-48">
