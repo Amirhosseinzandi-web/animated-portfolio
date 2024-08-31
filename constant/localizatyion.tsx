@@ -151,6 +151,7 @@ export const pageLevelLocalization = {
                 href: "https://amirhosseinzandi-web.github.io/cvio-website/",
                 bgColor: "gradient-bg-5"
             }
-        ]
+        ],
+        haveProjectTitle: "Do you have a project?",
     }
 }
