@@ -14,7 +14,7 @@ const ConatctComponent = () => {
         <motion.div
             initial={{ y: "-200vh", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.7, ease: "easeOut" }}
+            transition={{ delay: 0.8, ease: "easeOut" }}
         >
             <Layout className="bg-transparent h-[calc(100dvh-70px)] lg:h-[calc(100dvh-108px)] overflow-y-clip lg:mt-[38px] px-3 md:px-12 xl:px-40 2xl:px-48 max-w-[1920px] mx-auto">
                 <Row className="h-full">
