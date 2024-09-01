@@ -41,8 +41,8 @@ const PageTransitionComponent = ({ children }: { children: React.ReactNode }) =>
 
                 <motion.div
                     className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[60]"
-                    initial={{ opacity: 1 }}
-                    animate={{ opacity: 0 }}
+                    initial={{ opacity: 1 , display:"block" }}
+                    animate={{ opacity: 0 , display:"none" }}
                     transition={{ duration: 0.4, delay: 0.5, ease: "easeInOut" }}
                 >
                     <Text className="text-white text-5xl lg:text-8xl">{pathName.charAt(1).toUpperCase() + pathName.substring(2).toLowerCase()}</Text>

@@ -153,5 +153,8 @@ export const pageLevelLocalization = {
             }
         ],
         haveProjectTitle: "Do you have a project?",
+    },
+    contact: {
+        sayHello: "Say Hello"
     }
 }

@@ -1,11 +1,10 @@
+import ConatctComponent from "@/components/app/Contact";
 
 
 
 const ContactPage = () => {
     return (
-        <div>
-            contact page
-        </div>
+        <ConatctComponent />
     );
 }
 

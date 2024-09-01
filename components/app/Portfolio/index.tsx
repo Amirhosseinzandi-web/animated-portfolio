@@ -133,7 +133,7 @@ const PortfolioComponent = () => {
                         </div>
 
                     </Flex>
-                    
+
                 </div>
 
 
