@@ -47,7 +47,7 @@ const ConatctComponent = () => {
                             <form action="" className="flex flex-col gap-8 justify-evenly w-full lg:h-fit">
 
                                 <Flex vertical gap={32} className="border-b-black border-b-[2px] lg:!gap-[140px]">
-                                    <label className="text-xl" htmlFor="">Dear Lama Dev,</label>
+                                    <label className="text-xl" htmlFor="">Dear Amirhossein,</label>
                                     <input type="text" className="outline-none border-none bg-transparent mb-1" />
                                 </Flex>
 
