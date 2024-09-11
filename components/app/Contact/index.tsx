@@ -1,6 +1,6 @@
 "use client"
 import { pageLevelLocalization } from "@/constant/localizatyion";
-import { Col, Flex, Form, Input, Layout, Row } from "antd";
+import { Col, Flex, Layout, Row } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { useFormik } from "formik";
 import { motion } from "framer-motion"
@@ -13,21 +13,17 @@ const ConatctComponent = () => {
     const [domLoaded, setDomLoaded] = useState(false)
     const [emailSent, setEmailSent] = useState(false)
     const [emailError, setEmailError] = useState(false)
-    const [initialMessage, setInitialMessage] = useState("");
-    const [initialEmail, setInitialEmail] = useState("");
     const { contact } = pageLevelLocalization
 
 
     useEffect(() => {
         setDomLoaded(true)
-        const savedMessage = localStorage.getItem('user_message');
-        const savedEmail = localStorage.getItem('user_email');
-        if (savedMessage) {
-            setInitialMessage(savedMessage);
-        }
-        if (savedEmail) {
-            setInitialEmail(savedEmail);
-        }
+        const savedMessage = localStorage.getItem('user_message') || "";
+        const savedEmail = localStorage.getItem('user_email') || "";
+        formik.setValues({
+            user_message: savedMessage,
+            user_email: savedEmail
+        });
     }, [])
 
     useEffect(() => {
@@ -55,11 +51,11 @@ const ConatctComponent = () => {
                     })
                 .then(
                     () => {
-                        console.log('SUCCESS!');
+                        // console.log('SUCCESS!');
                         setEmailSent(true)
                     },
                     (error) => {
-                        console.log('FAILED...', error.text);
+                        // console.log('FAILED...', error.text);
                         setEmailError(true)
                     },
                 );
@@ -70,8 +66,8 @@ const ConatctComponent = () => {
 
     const formik = useFormik({
         initialValues: {
-            user_message: initialMessage,
-            user_email: initialEmail
+            user_message: "",
+            user_email: ""
         },
         validationSchema: Yup.object({
             user_message: Yup.string().required("Text is required"),
@@ -79,11 +75,9 @@ const ConatctComponent = () => {
                 .email("Invalid email address")
                 .required("Email is required")
         }),
-        enableReinitialize: true,
         onSubmit: (values) => {
             sendEmail(values)
-            localStorage.setItem('user_message', formik.values.user_message);
-            localStorage.setItem('user_email', formik.values.user_email);
+            localStorage.clear()
             formik.resetForm()
         }
     })
