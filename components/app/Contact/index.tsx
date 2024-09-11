@@ -55,11 +55,11 @@ const ConatctComponent = () => {
                     })
                 .then(
                     () => {
-                        // console.log('SUCCESS!');
+                        console.log('SUCCESS!');
                         setEmailSent(true)
                     },
                     (error) => {
-                        // console.log('FAILED...', error.text);
+                        console.log('FAILED...', error.text);
                         setEmailError(true)
                     },
                 );
