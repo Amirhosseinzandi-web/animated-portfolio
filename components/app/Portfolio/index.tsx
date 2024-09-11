@@ -70,9 +70,9 @@ const PortfolioComponent = () => {
 
                                 {
                                     portfolio.workSample.map((item, index) => (
-                                        <div key={index} className={`flex justify-center items-center h-[100dvh] w-screen flex-shrink-0 ${item.bgColor}`}>
+                                        <div key={index} className={`flex justify-center h-[100dvh] w-screen flex-shrink-0 py-5 ${item.bgColor}`}>
 
-                                            <Flex justify="center" align="flex-start" vertical gap={32}>
+                                            <Flex justify="center" align="flex-start" vertical gap={10}>
                                                 <Title className="!font-bold !text-xl md:!text-5xl 2xl:!text-8xl !text-slate-800">{item.title}</Title>
                                                 <figure className="relative w-[320px] h-[224px] lg:w-[600px] lg:h-[420px] rounded-lg overflow-hidden">
                                                     <Image
