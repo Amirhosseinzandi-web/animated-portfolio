@@ -82,6 +82,8 @@ const ConatctComponent = () => {
         enableReinitialize: true,
         onSubmit: (values) => {
             sendEmail(values)
+            localStorage.setItem('user_message', formik.values.user_message);
+            localStorage.setItem('user_email', formik.values.user_email);
             formik.resetForm()
         }
     })
