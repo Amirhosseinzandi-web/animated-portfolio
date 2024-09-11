@@ -126,15 +126,15 @@ const ConatctComponent = () => {
                         <span>🤪</span>
                     </Col>
 
-                    <Col xs={24} lg={12} className="h-auto lg:h-full flex justify-center items-center">
+                    <Col xs={24} lg={12} className="h-auto flex justify-center items-center">
                         <div className="h-full w-full bg-[#fef2f2] rounded-xl flex justify-center items-center py-9">
                             <form ref={formRef} className="flex flex-col gap-8 justify-evenly w-full lg:h-fit max-w-[70%]" onSubmit={formik.handleSubmit}>
 
 
                                 <div>
-                                    <Flex vertical gap={32} className="border-b-black border-b-[2px] lg:!gap-[110px]">
+                                    <Flex vertical gap={32} className="border-b-black border-b-[2px] lg:!gap-[10px]">
                                         <label className="text-xl" htmlFor="user_message">Dear Amirhossein,</label>
-                                        <TextArea rows={4} className="!outline-none !border-none !bg-transparent mb-1 max-h-[264px]"
+                                        <TextArea rows={4} className="!outline-none !border-none !bg-transparent mb-1 max-h-[400px]"
                                             id="user_message"
                                             {...formik.getFieldProps('user_message')}
                                         />
