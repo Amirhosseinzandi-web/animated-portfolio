@@ -44,6 +44,7 @@ const HomePage = () => {
                                         src={Logo}
                                         alt="Picture of the author"
                                         fill
+                                        placeholder="blur"
                                         className="object-contain"
                                     />
                                 </div>
