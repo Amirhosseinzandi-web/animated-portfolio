@@ -105,3 +105,9 @@ body {
 .gradient-bg-6 {
     background: linear-gradient(to right, #f472b6, #60a5fa);
 }
+.swal2-modal{
+    cursor: auto;
+}
+.swal2-confirm{
+    cursor: pointer !important;
+}
