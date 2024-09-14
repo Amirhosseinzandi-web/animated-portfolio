@@ -7,12 +7,14 @@ import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react";
 import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 
 const ConatctComponent = () => {
     const [domLoaded, setDomLoaded] = useState(false)
     const [emailSent, setEmailSent] = useState(false)
     const [emailError, setEmailError] = useState(false)
+    const [messageLoaded, setMessageLoaded] = useState(false)
     const { contact } = pageLevelLocalization
 
 
@@ -39,7 +41,7 @@ const ConatctComponent = () => {
         // e.preventDefault();
         setEmailSent(false)
         setEmailError(false)
-
+        setMessageLoaded(true)
 
         if (formRef.current) {
             emailjs
@@ -52,10 +54,14 @@ const ConatctComponent = () => {
                 .then(
                     () => {
                         // console.log('SUCCESS!');
+                        setMessageLoaded(false)
                         setEmailSent(true)
+                        localStorage.clear()
+                        formik.resetForm()
                     },
                     (error) => {
                         // console.log('FAILED...', error.text);
+                        setMessageLoaded(false)
                         setEmailError(true)
                     },
                 );
@@ -77,8 +83,6 @@ const ConatctComponent = () => {
         }),
         onSubmit: (values) => {
             sendEmail(values)
-            localStorage.clear()
-            formik.resetForm()
         }
     })
 
@@ -90,6 +94,23 @@ const ConatctComponent = () => {
             localStorage.setItem('user_email', formik.values.user_email);
         }
     }, [formik.values.user_message, formik.values.user_email, domLoaded]);
+
+
+
+
+    useEffect(() => {
+
+        const alertState = (emailError && "error") || (emailSent && "success") || (messageLoaded && "info")
+
+        if (alertState) {
+            Swal.fire({
+                title: alertState === "error" ? "something went wrong" : alertState === "success" ? "Message sent" : "Wait",
+                icon: alertState
+            });
+        }
+
+
+    }, [emailSent, emailError, messageLoaded])
 
 
 
@@ -167,18 +188,7 @@ const ConatctComponent = () => {
 
                                 <span className="text-xl">Regards</span>
                                 <button type="submit" className="bg-[#e9d5ff] p-4 rounded-md font-semibold text-xl">Send</button>
-                                {
 
-                                    emailSent && (
-                                        <p className="text-xl text-green-600">Successfully sent</p>
-                                    )
-                                }
-                                {
-
-                                    emailError && (
-                                        <p className="text-xl text-red-600">Something went wrong !</p>
-                                    )
-                                }
                             </form>
                         </div>
                     </Col>

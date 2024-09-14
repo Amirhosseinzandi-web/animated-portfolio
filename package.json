@@ -21,6 +21,7 @@
     "react-responsive": "^10.0.0",
     "react-sticky-el": "^2.1.1",
     "react-typed": "^2.0.12",
+    "sweetalert2": "^11.14.0",
     "yup": "^1.4.0"
   },
   "devDependencies": {
